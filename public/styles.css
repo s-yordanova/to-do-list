@@ -1,0 +1,82 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+form {
+  width: 100%;
+  margin: 100px 0 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#new-task-title {
+  width: 30%;
+  height: 30px;
+  font-size: 25px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid rgb(210, 208, 208);
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.submit-button {
+  background: #5e5df0;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji",
+    NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+    EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+#new-task-title:focus {
+  box-shadow: 0 0 5pt 2pt #d3d3d3;
+  outline-width: 0px;
+}
+
+.list-wrapper {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+  color: black;
+  border: 1px solid gray;
+  border-radius: 4px;
+  outline: 0;
+  cursor: pointer;
+}
+
+label{
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
